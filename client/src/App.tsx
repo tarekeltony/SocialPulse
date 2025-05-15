@@ -14,6 +14,7 @@ import EducationPage from "@/pages/EducationPage";
 import SkillsPage from "@/pages/SkillsPage";
 import ServicesPage from "@/pages/ServicesPage";
 import ContactPage from "@/pages/ContactPage";
+import GlobalExperiencePage from "@/pages/GlobalExperiencePage";
 import { queryClient } from "./lib/queryClient";
 
 function Router() {
@@ -32,6 +33,7 @@ function Router() {
         <Route path="/education" component={EducationPage} />
         <Route path="/skills" component={SkillsPage} />
         <Route path="/services" component={ServicesPage} />
+        <Route path="/global-experience" component={GlobalExperiencePage} />
         <Route path="/contact" component={ContactPage} />
         <Route component={NotFound} />
       </Switch>

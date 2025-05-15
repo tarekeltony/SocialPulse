@@ -12,6 +12,7 @@ const navItems = [
   { name: "Education", path: "/education" },
   { name: "Skills", path: "/skills" },
   { name: "Services", path: "/services" },
+  { name: "Global Experience", path: "/global-experience" },
   { name: "Contact", path: "/contact" },
 ];
 
