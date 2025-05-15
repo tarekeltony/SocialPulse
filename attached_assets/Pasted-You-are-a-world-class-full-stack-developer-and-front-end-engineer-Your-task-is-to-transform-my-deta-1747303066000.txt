@@ -1,0 +1,300 @@
+You are a world-class full-stack developer and front-end engineer. Your task is to transform my detailed CV (attached as PDF, content included below) and my professional photo (URL below) into a fully functional, elegant, and modern personal portfolio website. This site will serve as my official personal/professional web presence.
+
+Inputs:
+CV: Use the attached PDF (full content included below)—do not summarize, condense, or omit any details. Render all information in full.
+
+Profile Photo: Use this image in the Home (hero) and About sections:
+https://i.postimg.cc/wTd9mgpd/Generate-a-high-quality-professional-portrait-6.jpg
+
+Project & Stack Requirements
+Tech Stack & Structure
+
+React (with Vite) + React Router + Tailwind CSS for styling.
+
+Professional code organization: /src/components/, /src/pages/, /src/assets/, etc.
+
+Clean, well-commented, modular, and accessible code throughout.
+
+Site Pages & Content
+
+Home: Hero section with name, title, photo, summary, and contact/social links.
+
+About: Detailed professional biography (from CV).
+
+Experience: Complete, reverse-chronological job history with detailed role descriptions.
+
+Education: All academic qualifications, institutions, and dates.
+
+Certifications: All credentials, certifications, and key training.
+
+Skills: Core competencies, methodologies, technical skills, and languages.
+
+Contact: All methods (email, LinkedIn, phone), clickable links.
+
+Consulting Services:
+New Page detailing consulting/advisory services, including but not limited to:
+
+People & Culture Transformation
+
+Organizational Development & Change Leadership
+
+Talent Management & Performance Optimization
+
+HR Process Excellence & Policy Design
+
+Strategic Planning & Business Advisory
+
+AI, Automation & Digital Transformation
+(HR digitalization, AI-powered solutions, automation, digital EX, workforce upskilling, digital transformation roadmaps, etc.)
+(Use the detailed content provided below, and ensure the tone matches my professional executive positioning.)
+
+Design & UX
+
+Minimal, modern, elegant (light color palette preferred).
+
+Fully responsive and mobile-first.
+
+Navigation via React Router with animated transitions (Framer Motion or Tailwind plugin preferred).
+
+Accessibility: ARIA tags, alt text, keyboard navigation, semantic HTML5.
+
+Interactive elements: hover/focus states for buttons/links.
+
+Highlight current page in navbar.
+
+SEO best practices: title/meta tags, favicon placeholder, Open Graph/Twitter meta.
+
+Functionality & Best Practices
+
+All data (education, experience, services) easily editable (use data objects or JSON if practical).
+
+Downloadable CV (PDF) button placeholder.
+
+Centralized theme/colors in tailwind.config.js.
+
+README.md with clear Vercel + GitHub deployment instructions.
+
+All contact/social links open in a new tab or appropriate handler.
+
+Placeholder for analytics snippet and/or future blog section.
+
+Special Instructions
+Use my CV and services content verbatim (do not rewrite, condense, or omit).
+
+Integrate my photo from the provided URL; use as a key visual in Home/About.
+
+For the Consulting Services page, fully include all areas listed, with a focus on digital, AI, and automation consulting.
+
+All sections must be complete, not placeholder text.
+
+If anything is unclear, prompt for clarification.
+
+CV Content:
+**Tarek Eltony**
+Riyadh, Saudi Arabia | +966508725419 | +201099600992 | [tarekeltony2010@gmail.com](mailto:tarekeltony2010@gmail.com) | \[LinkedIn Profile URL: [https://www.linkedin.com/in/tarekeltony/](https://www.linkedin.com/in/tarekeltony/)]
+
+---
+
+**Executive Summary**
+
+A dynamic and results-oriented People & Culture Strategist and Organizational Development Consultant with extensive experience driving HR transformation and business excellence across the GCC and Middle East. Proven ability to architect and implement high-impact HR strategies aligned with overarching business objectives, specializing in organizational design, talent optimization, change leadership, and fostering high-performance cultures. Leverages deep regional insights and strategic management acumen to enhance operational efficiency, maximize human capital ROI, and enable sustainable organizational growth in complex and evolving market landscapes. MBA-educated and certified in multiple strategic and HR methodologies.
+
+---
+
+**Professional Experience**
+
+**People and Culture Manager** | Floward | Riyadh, Saudi Arabia (Hybrid)
+*August 2022 – Present*
+
+* Architected and deployed comprehensive HR frameworks, including policies, procedures, SOPs, and organizational flowcharts, significantly enhancing operational efficiency and compliance standards.
+* Spearheaded strategic organizational redesign initiatives, restructuring charts and functional departments to optimize reporting lines, elevate accountability, and improve overall operational effectiveness.
+* Elevated talent acquisition and development by conducting rigorous job analyses and crafting strategically aligned job descriptions, successfully attracting top-tier talent and fostering internal growth pathways.
+* Championed a superior employee experience by facilitating human-centered journey mapping, leading to measurable improvements in employee satisfaction, engagement, and workplace culture. \[Quantify improvement if possible, e.g., by X% based on survey results].
+* Played an integral role in corporate strategic planning and execution, contributing directly to long-term goal setting and the formulation of actionable strategies for sustainable organizational success.
+* Designed and executed innovative HR strategies intrinsically linked to corporate objectives, demonstrably boosting workforce productivity and cultivating a positive, high-performance organizational culture.
+
+**Strategy & OD Consultant, Business Excellence** | IBIS Consultancy | \[Location - Specify if known, e.g., Regional] (Contract)
+*January 2019 – Present*
+
+* Guides diverse organizations through complex transformations, including mission reinvention, end-to-end digital transformation, and disruptive innovation strategies.
+* Delivers comprehensive market, competitor, and customer analyses, providing critical intelligence to underpin the development and execution of winning business strategies.
+* Partners with senior leadership to translate strategic blueprints into tangible operational plans, ensuring financial and operational alignment for organization-wide impact.
+* Optimizes business processes and enhances employee effectiveness through rigorous evaluation, process re-engineering, and human-centered employee journey mapping initiatives.
+* Leads business value assessments and operationalizes Key Performance Indicators (KPIs), demonstrating tangible value creation and ROI for client engagements. \[Provide examples of value created, e.g., cost savings, revenue growth, efficiency gains].
+* Develops strategic roadmaps with actionable milestones to mitigate risks, address compliance gaps, and elevate HR service delivery standards and overall employee experience.
+
+**Managing Director** | SAHWA Digital Agency (Saudi) - Egypt Branch | Cairo, Egypt \[Confirmation Recommended: Location]
+*March 2019 – January 2022*
+
+* Co-defined and executed the company's strategic vision, analyzing market dynamics and identifying growth opportunities to maximize profitability and market share. \[Specify scale, e.g., Grew revenue by X%].
+* Directed all facets of business operations, establishing a culture of efficiency, accountability, and proactive problem-solving across teams.
+* Collaborated in the development and management of strategic budgets and financial plans, ensuring resource allocation supported short- and long-term growth objectives. \[Managed budget of approx. \$X Million/SAR Y Million].
+* Provided decisive leadership, fostering a high-performance culture that consistently met and exceeded organizational targets. \[Led team of Z individuals].
+* Spearheaded the HR function, designing and implementing strategic programs (engagement, compensation & benefits, talent & performance management) focused on enhancing employee experience and driving business alignment.
+* Served as a trusted advisor to senior management on critical HR matters, including policy interpretation, talent strategy, compensation benchmarking, and performance optimization.
+
+**HR Business Partner** | CORPY CORE - Technology & IT | \[Location - Specify if known, e.g., Cairo, Egypt]
+*October 2014 – December 2018*
+
+* Partnered strategically with leadership to define and forecast organizational and HR development needs aligned with corporate vision, mission, and growth plans.
+* Managed the end-to-end talent acquisition lifecycle for all organizational levels, successfully fulfilling recruitment needs through robust planning, sourcing, screening, interviewing, and selection processes.
+* Enhanced manager and employee performance through targeted coaching, counseling, and performance improvement initiatives, effectively addressing skill gaps and developmental needs.
+* Cultivated positive employee relations by facilitating effective communication, providing guidance on conflict resolution, and ensuring adherence to regulatory compliance and HR best practices.
+* Administered comprehensive training and development programs, from needs analysis and design to implementation and ROI evaluation, demonstrably improving workforce capabilities.
+* Developed and implemented a robust performance management system, including performance appraisal design, to foster a high-performance work environment.
+
+**Talent Acquisition Specialist** | Merge for Recruitment & Management Consultancy | \[Location - Specify if known, e.g., Cairo, Egypt]
+*October 2012 – August 2014*
+
+* Managed full-cycle recruitment processes for diverse clientele, collaborating closely to understand manpower needs and execute tailored recruitment plans, ensuring successful placements.
+* Utilized advanced sourcing techniques, including headhunting, job advertising, and talent pipelining, to attract and secure high-caliber candidates across various industries.
+* Built and maintained strong client relationships, serving as a trusted advisor on talent acquisition strategies and market trends.
+* Conducted rigorous candidate screening and evaluation, employing effective interviewing and assessment techniques to ensure optimal skill and cultural fit.
+
+---
+
+**Education & Professional Development**
+
+* **Master of Business Administration (MBA)**
+
+  * ESLSCA Business School - Paris, France | *Graduated 2023*
+* **HRM - Post Graduate Diploma**
+
+  * American University in Cairo (AUC) | *Graduated 2012*
+* **Bachelor of Tourism Management**
+
+  * Minia University | *Graduated 2010*
+
+**Certifications & Key Training:**
+
+* SPHRi (Senior Professional in Human Resources - International) - HRCI
+* PHRi (Professional in Human Resources - International) - HRCI
+* SHRM-SCP (Senior Certified Professional) - SHRM (*In Progress*)
+* HAY Methodology (Job Evaluation) - Korn Ferry HayGroup
+* Change Management (ADKAR Model)
+* Six Sigma (*In Progress*)
+* EFQM (European Foundation for Quality Management) Assessor \[Confirmation Recommended: Assessor Level?]
+* APQC (American Productivity & Quality Center) Process Classification Framework \[Confirmation Recommended: Specific Training/Certification?]
+* Blue Ocean Strategy
+* Balanced Scorecard
+* TOGAF (The Open Group Architecture Framework) (*In Progress*)
+* BCG-Strategy Consulting Virtual Experience Program - Boston Consulting Group
+* Management Consulting Approach to Problem Solving
+* Accenture Consultant Program
+* Deloitte Tech Consulting Virtual Internship
+* McKinsey Forward Program
+* Think Like A Strategy Consultant - StrategyU
+
+---
+
+**Core Competencies & Technical Skills**
+
+* **Strategic Leadership & Management:** Business Strategy Formulation & Execution, Strategic Planning, Financial Acumen, Budget Management, Team Leadership, Performance Management, Change Leadership, Stakeholder Management, Cross-Functional Collaboration, Business Excellence Models (EFQM).
+* **HR & Organizational Development Expertise:** People & Culture Strategy, Organizational Design & Restructuring (RACI), Job Analysis/Evaluation/Design (HAY Methodology), Talent Management (Career Pathing, 9-Box Grid), Performance Management Systems, Total Rewards (Compensation & Benefits Design, Salary Structuring), Employee Experience Journey Mapping, HR Policy & Procedure Development (SOPs), Employee Relations, HR Compliance, Training & Development (TOT), HR Analytics.
+* **Consulting & Advisory:** Management Consulting, Business Process Re-engineering, Market & Competitor Analysis, Customer Insights, Strategic Roadmapping, Business Value Assessment, KPI Development & Tracking, Problem Solving, Digital Transformation Strategy, Enterprise Architecture (Gartner, TOGAF).
+* **Strategic Frameworks & Methodologies:** Balanced Scorecard, Porter's 5 Forces, Blue Ocean Strategy, Business Model Canvas, SOSTAC, Industry 4.0 Analysis, Business Model Innovation, CPM Matrix, Resource-Based View (RBV), VRIO Framework, BCG Matrix, IFE/EFE Matrix, PESTEL, SWOT Analysis, System Thinking, Change Management (ADKAR, Kotter's 8 Steps).
+* **Technical Proficiencies:** HRIS Systems \[Specify Systems if known, e.g., SAP SuccessFactors, Workday], Microsoft Office Suite, Project Management Software \[Specify if known], Data Visualization Tools \[Specify if known].
+* **Languages:** Arabic (Native), English (Fluent) 
+
+---
+Consulting Services Page Content
+(Use the following for the /services or /consulting page—format as sections or visually engaging cards as appropriate. Include every area below, especially digital/AI offerings.)
+
+Consulting Services
+Empowering Organizations through People, Process & Intelligent Technology
+
+Overview
+As a senior People & Culture Strategist, Organizational Development Consultant, and business transformation advisor, I enable organizations across the Middle East and beyond to unlock their full human capital potential and achieve sustainable growth. With over 15 years of leadership and consulting experience, I deliver tailored solutions that align people, processes, and technology—equipping clients to navigate complexity, drive innovation, and lead confidently in the digital era.
+
+Consulting & Advisory Solutions
+
+People & Culture Transformation
+
+HR Strategy Design & Execution: Architect agile, future-ready HR operating models aligned with both business goals and digital realities.
+
+Employee Experience (EX) Optimization: Design and automate employee journeys for superior engagement, retention, and performance—leveraging data-driven insights.
+
+Culture Shaping: Build and sustain cultures that embrace digital change, innovation, and continuous learning.
+
+Organizational Development (OD) & Change Leadership
+
+Organizational Design & Restructuring: Develop scalable, adaptable org structures to support business agility and digital transformation initiatives.
+
+Change Management: Lead technology-driven transformation projects (AI, automation, new digital systems) using proven global methodologies (ADKAR, Kotter, EFQM), ensuring adoption and measurable ROI.
+
+Leadership Development: Equip leaders to thrive in a digital-first world—focusing on digital acumen, resilience, and adaptive thinking.
+
+AI, Automation & Digital Transformation
+
+AI-Driven HR Solutions: Advise and implement AI-powered tools for talent acquisition, employee engagement, performance management, and workforce analytics.
+
+Automation of HR Processes: Identify and automate repetitive HR and business processes (onboarding, leave management, policy queries, compliance tracking), freeing teams for higher-value work.
+
+Digital Transformation Roadmaps: Design actionable, business-aligned digital transformation strategies—from vision and technology selection to deployment and adoption.
+
+Workforce Upskilling & Readiness: Develop digital literacy and AI readiness programs to future-proof your workforce and foster a culture of innovation.
+
+Talent Management & Performance Optimization
+
+Smart Talent Acquisition & Onboarding: Deploy digital platforms and AI-powered assessments for enhanced hiring accuracy and candidate experience.
+
+Performance Management Systems: Implement digital performance frameworks with real-time feedback, analytics, and continuous development features.
+
+Compensation & Total Rewards: Benchmark and design digitally managed, competitive compensation structures using leading HRIS and market data tools.
+
+HR Process Excellence & Policy Design
+
+HR Policy & SOP Development: Digitize policy frameworks and standard operating procedures, ensuring instant access, version control, and compliance.
+
+Process Optimization: Leverage automation and digital workflows to reduce inefficiency, ensure compliance, and enable business scale.
+
+HR Technology & Analytics: Guide the selection, customization, and deployment of HRIS, HR analytics dashboards, and self-service portals.
+
+Strategic Planning & Business Advisory
+
+Market & Competitor Analysis: Deliver actionable, data-rich insights to inform digital and business transformation strategy.
+
+Business Model Innovation: Facilitate workshops and consulting on business model redesign, digital platform strategy, and operational excellence.
+
+KPI Development & Value Realization: Define, track, and operationalize strategic KPIs—enabling organizations to measure digital transformation impact.
+
+Industries & Sectors Served
+
+Technology & IT
+
+E-Commerce & Digital Platforms
+
+Professional Services & Consulting
+
+Retail, Hospitality & Services
+
+Manufacturing & Industrial
+
+Startups, SMEs, and Large Enterprises
+
+Why Partner With Me?
+
+Regional Expertise: Proven track record across GCC and Middle East business and regulatory environments.
+
+Future-Focused: Deep expertise in digital transformation, AI adoption, and automation strategy—integrated with advanced HR and OD practices.
+
+Human-Centric, Technology-Driven: Every solution is designed to elevate both business outcomes and the employee experience.
+
+Strategic Rigor & Integrity: MBA-educated, multi-certified, and grounded in global best practices and ethical consulting.
+
+Confidential, Agile, and Results-Oriented: I deliver value with discretion, speed, and measurable impact.
+
+Ready to Transform?
+Let’s discuss your unique challenges and future ambitions.
+📧 tarekeltony2010@gmail.com
+📱 +966508725419 | +201099600992
+https://www.linkedin.com/in/tarekeltony/
+
+Empowering your organization to thrive—by putting people, purpose, and intelligent technology at the heart of performance.
+
+Profile Image URL:
+https://i.postimg.cc/wTd9mgpd/Generate-a-high-quality-professional-portrait-6.jpg
+or 
+<a href='https://postimg.cc/jCZVVV28' target='_blank'><img src='https://i.postimg.cc/wTd9mgpd/Generate-a-high-quality-professional-portrait-6.jpg' border='0' alt='Generate-a-high-quality-professional-portrait-6'/></a>
+or 
+<a href='https://postimg.cc/jCZVVV28' target='_blank'><img src='https://i.postimg.cc/jCZVVV28/Generate-a-high-quality-professional-portrait-6.jpg' border='0' alt='Generate-a-high-quality-professional-portrait-6'/></a>
