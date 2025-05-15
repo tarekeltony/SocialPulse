@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import SectionHeader from "@/components/shared/SectionHeader";
 import { profile } from "@/data/profile";
 
@@ -10,112 +11,115 @@ const AboutPage = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className="py-16 bg-white"
+      className="section-padding gradient-bg"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           title="About Me"
-          subtitle="Learn more about my background and expertise"
+          subtitle="Learn more about my background and expertise in HR transformation and organizational development"
+          highlightText="My Story"
         />
 
-        <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-center mb-10">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="col-span-1 flex justify-center"
-            >
-              <img
-                src={profile.photo}
-                alt={profile.name}
-                className="rounded-lg w-48 h-48 object-cover shadow-md"
-              />
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="col-span-2"
-            >
-              <h3 className="text-xl font-semibold text-primary mb-4">
-                {profile.title}
-              </h3>
-              <p className="text-foreground/80 mb-4">
-                A dynamic and results-oriented professional with extensive experience 
-                driving HR transformation and business excellence across the GCC and Middle East.
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
-                  <p className="flex items-center text-foreground/80">
-                    <i className="fas fa-map-marker-alt w-6 text-primary"></i> {profile.location}
+        <div className="max-w-5xl mx-auto">
+          <Card className="border-none shadow-lg rounded-2xl overflow-hidden">
+            <div className="h-1.5 gradient-bg-primary w-full"></div>
+            <CardContent className="p-8 md:p-12">
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-center mb-10">
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5 }}
+                  className="md:col-span-4 flex justify-center"
+                >
+                  <div className="relative">
+                    <div className="absolute inset-0 rounded-full gradient-bg-secondary blur-xl opacity-20 transform scale-110"></div>
+                    <img
+                      src={profile.photo}
+                      alt={profile.name}
+                      className="relative rounded-2xl w-48 h-48 md:w-60 md:h-60 object-cover shadow-lg border-4 border-white"
+                    />
+                  </div>
+                </motion.div>
+                
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.2 }}
+                  className="md:col-span-8"
+                >
+                  <h3 className="text-2xl font-bold gradient-text mb-4">
+                    {profile.title}
+                  </h3>
+                  <p className="text-foreground/80 mb-6 text-lg">
+                    A dynamic and results-oriented professional with extensive experience 
+                    driving HR transformation and business excellence across the GCC and Middle East.
                   </p>
-                  <p className="flex items-center text-foreground/80">
-                    <i className="fas fa-phone w-6 text-primary"></i> {profile.phone}
-                  </p>
-                </div>
-                <div>
-                  <p className="flex items-center text-foreground/80">
-                    <i className="fas fa-envelope w-6 text-primary"></i> {profile.email}
-                  </p>
-                  <p className="flex items-center text-foreground/80">
-                    <i className="fab fa-linkedin w-6 text-primary"></i> tarekeltony
-                  </p>
-                </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="space-y-3">
+                      <div className="flex items-center text-foreground/80 group">
+                        <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-3 group-hover:bg-primary group-hover:text-white transition-colors">
+                          <i className="fas fa-map-marker-alt"></i>
+                        </div>
+                        <span>{profile.location}</span>
+                      </div>
+                      <div className="flex items-center text-foreground/80 group">
+                        <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-3 group-hover:bg-primary group-hover:text-white transition-colors">
+                          <i className="fas fa-phone"></i>
+                        </div>
+                        <span>{profile.phone}</span>
+                      </div>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="flex items-center text-foreground/80 group">
+                        <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-3 group-hover:bg-primary group-hover:text-white transition-colors">
+                          <i className="fas fa-envelope"></i>
+                        </div>
+                        <span className="truncate">{profile.email}</span>
+                      </div>
+                      <div className="flex items-center text-foreground/80 group">
+                        <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-3 group-hover:bg-primary group-hover:text-white transition-colors">
+                          <i className="fab fa-linkedin"></i>
+                        </div>
+                        <span>tarekeltony</span>
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
               </div>
-            </motion.div>
-          </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="prose max-w-none text-foreground/80"
-          >
-            <p className="mb-4">
-              A dynamic and results-oriented People & Culture Strategist and Organizational 
-              Development Consultant with extensive experience driving HR transformation 
-              and business excellence across the GCC and Middle East. Proven ability to 
-              architect and implement high-impact HR strategies aligned with overarching 
-              business objectives, specializing in organizational design, talent optimization, 
-              change leadership, and fostering high-performance cultures.
-            </p>
-            <p className="mb-4">
-              Leverages deep regional insights and strategic thinking to deliver tangible 
-              business outcomes through human capital excellence. Committed to driving 
-              sustainable organizational performance by aligning people strategies with 
-              business priorities, optimizing talent management frameworks, and building 
-              innovative HR solutions that address complex business challenges.
-            </p>
-            <p>
-              Recognized for exceptional stakeholder management skills, the ability to 
-              navigate ambiguity, and a proven track record of successfully implementing 
-              transformative HR initiatives that drive measurable business value. Combines 
-              strong analytical capabilities with practical execution expertise to turn 
-              strategic vision into operational reality.
-            </p>
-          </motion.div>
+              <div className="mt-10 mb-6 h-px bg-gray-100"></div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            className="mt-10 flex justify-center"
-          >
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="border-primary text-primary hover:bg-primary/10"
-              onClick={() => window.open("/api/download-cv", "_blank")}
-            >
-              <i className="fas fa-download mr-2"></i> Download Full CV
-            </Button>
-          </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                className="text-foreground/80 space-y-6 text-lg leading-relaxed"
+              >
+                {profile.longBio.map((paragraph, index) => (
+                  <p key={index}>{paragraph}</p>
+                ))}
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+                className="mt-12 flex justify-center"
+              >
+                <Button 
+                  size="lg"
+                  className="rounded-full py-6 px-8 gap-2 gradient-bg-primary shadow-lg hover:shadow-primary/25 text-base"
+                  onClick={() => window.open("/api/download-cv", "_blank")}
+                >
+                  <i className="fas fa-download"></i> Download Full CV
+                </Button>
+              </motion.div>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </motion.div>
