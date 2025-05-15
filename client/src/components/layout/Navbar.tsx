@@ -54,8 +54,8 @@ const Navbar = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <Link href="/">
-            <div className="font-bold flex items-center">
-              <span className="text-xl md:text-2xl gradient-text">Tarek Eltony</span>
+            <div className="font-bold flex items-center mr-4">
+              <span className="text-xl md:text-2xl gradient-text tracking-wide">Tarek Eltony</span>
             </div>
           </Link>
 
@@ -81,9 +81,9 @@ const Navbar = () => {
           </nav>
 
           {/* Contact Button - Desktop Only */}
-          <div className="hidden md:block">
+          <div className="hidden md:block ml-4">
             <Link href="/contact">
-              <Button className="rounded-full px-6 gradient-bg-primary">
+              <Button className="rounded-full px-6 py-2.5 gradient-bg-primary font-medium">
                 Get in Touch
               </Button>
             </Link>

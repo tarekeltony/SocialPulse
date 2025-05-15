@@ -20,15 +20,15 @@ const HomePage = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="max-w-2xl"
           >
-            <span className="inline-block py-1 px-3 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6">
+            <span className="inline-block py-1.5 px-4 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6">
               People & Culture Expert
             </span>
             
-            <h1 className="mb-6">
-              <span className="gradient-text font-bold">Tarek Eltony</span>
+            <h1 className="mb-5">
+              <span className="gradient-text font-bold tracking-tight">Tarek Eltony</span>
             </h1>
             
-            <h2 className="text-xl md:text-2xl lg:text-3xl font-medium text-foreground/90 mb-6">
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-medium text-foreground/90 mb-8">
               {profile.title}
             </h2>
             

@@ -88,9 +88,13 @@ const ContactForm = () => {
             name="name"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Full Name</FormLabel>
+                <FormLabel className="text-foreground/90 font-medium">Full Name</FormLabel>
                 <FormControl>
-                  <Input placeholder="John Doe" {...field} />
+                  <Input 
+                    placeholder="John Doe" 
+                    {...field} 
+                    className="rounded-lg h-12 border-gray-200 focus:border-primary"
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -102,9 +106,14 @@ const ContactForm = () => {
             name="email"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Email Address</FormLabel>
+                <FormLabel className="text-foreground/90 font-medium">Email Address</FormLabel>
                 <FormControl>
-                  <Input type="email" placeholder="john@example.com" {...field} />
+                  <Input 
+                    type="email" 
+                    placeholder="john@example.com" 
+                    {...field} 
+                    className="rounded-lg h-12 border-gray-200 focus:border-primary"
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -116,9 +125,13 @@ const ContactForm = () => {
             name="company"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Company (Optional)</FormLabel>
+                <FormLabel className="text-foreground/90 font-medium">Company (Optional)</FormLabel>
                 <FormControl>
-                  <Input placeholder="Your company" {...field} />
+                  <Input 
+                    placeholder="Your company" 
+                    {...field} 
+                    className="rounded-lg h-12 border-gray-200 focus:border-primary"
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -130,13 +143,13 @@ const ContactForm = () => {
             name="service"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Service of Interest</FormLabel>
+                <FormLabel className="text-foreground/90 font-medium">Service of Interest</FormLabel>
                 <Select
                   onValueChange={field.onChange}
                   defaultValue={field.value}
                 >
                   <FormControl>
-                    <SelectTrigger>
+                    <SelectTrigger className="rounded-lg h-12 border-gray-200">
                       <SelectValue placeholder="Select a service" />
                     </SelectTrigger>
                   </FormControl>
@@ -160,11 +173,11 @@ const ContactForm = () => {
             name="message"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Your Message</FormLabel>
+                <FormLabel className="text-foreground/90 font-medium">Your Message</FormLabel>
                 <FormControl>
                   <Textarea
                     placeholder="How can I help you?"
-                    className="min-h-[120px]"
+                    className="min-h-[140px] rounded-lg border-gray-200 focus:border-primary"
                     {...field}
                   />
                 </FormControl>
@@ -175,7 +188,7 @@ const ContactForm = () => {
 
           <Button
             type="submit"
-            className="w-full"
+            className="w-full rounded-full py-6 gradient-bg-primary font-medium text-base shadow-lg hover:shadow-primary/25"
             disabled={isSubmitting}
           >
             {isSubmitting ? (
