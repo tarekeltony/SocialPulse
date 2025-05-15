@@ -99,9 +99,6 @@ const EducationPage = () => {
                       <div>
                         <span className="text-foreground/90 font-medium">
                           {cert.name}
-                          {cert.inProgress && (
-                            <Badge className="ml-2 bg-accent/10 text-accent border-none">In Progress</Badge>
-                          )}
                         </span>
                       </div>
                     </motion.div>
