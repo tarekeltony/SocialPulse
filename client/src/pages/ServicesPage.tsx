@@ -6,7 +6,7 @@ import SectionHeader from "@/components/shared/SectionHeader";
 import { services } from "@/data/services";
 
 const ServicesPage = () => {
-  const serviceIcons = {
+  const serviceIcons: Record<string, string> = {
     "People & Culture Transformation": "fas fa-users",
     "Organizational Development & Change Leadership": "fas fa-sitemap",
     "Talent Management & Performance Optimization": "fas fa-user-tie",
@@ -21,15 +21,16 @@ const ServicesPage = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className="py-16 bg-white"
+      className="section-padding gradient-bg"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           title="Consulting Services"
           subtitle="Specialized advisory services to help organizations transform, optimize, and excel in today's dynamic business environment"
+          highlightText="Expert Solutions"
         />
 
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <motion.div
@@ -41,18 +42,20 @@ const ServicesPage = () => {
                   duration: 0.5,
                   delay: index * 0.1,
                 }}
-                whileHover={{ y: -5 }}
               >
-                <Card className="h-full bg-secondary-50 hover:shadow-lg transition-all">
-                  <CardContent className="p-6">
-                    <div className="text-center mb-4">
-                      <i className={`${serviceIcons[service.title] || 'fas fa-cogs'} text-primary text-4xl`}></i>
+                <Card className="h-full bg-white rounded-xl shadow-md card-hover overflow-hidden border-none">
+                  <div className="h-2 gradient-bg-primary w-full"></div>
+                  <CardContent className="p-8">
+                    <div className="flex items-center justify-center mb-6">
+                      <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
+                        <i className={`${serviceIcons[service.title] || 'fas fa-cogs'} text-primary text-2xl`}></i>
+                      </div>
                     </div>
-                    <h3 className="text-xl font-semibold text-primary text-center mb-4">{service.title}</h3>
-                    <ul className="space-y-2 text-foreground/80">
+                    <h3 className="text-xl font-bold text-center mb-6">{service.title}</h3>
+                    <ul className="space-y-3 text-foreground/70">
                       {service.offerings.map((offering, idx) => (
                         <li key={idx} className="flex items-start">
-                          <i className="fas fa-check text-primary mt-1 mr-2"></i>
+                          <i className="fas fa-check-circle text-primary mt-1 mr-3"></i>
                           <span>{offering}</span>
                         </li>
                       ))}
@@ -68,11 +71,14 @@ const ServicesPage = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="mt-12 text-center"
+            className="mt-16 text-center"
           >
             <Link href="/contact">
-              <Button size="lg" className="gap-2">
-                <i className="fas fa-handshake"></i> Discuss Your Consulting Needs
+              <Button 
+                size="lg" 
+                className="rounded-full py-6 px-8 gradient-bg-primary shadow-lg hover:shadow-primary/25 text-base"
+              >
+                <i className="fas fa-handshake mr-2"></i> Discuss Your Consulting Needs
               </Button>
             </Link>
           </motion.div>

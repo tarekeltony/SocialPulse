@@ -47,42 +47,47 @@ const Navbar = () => {
       className={cn(
         "sticky top-0 z-50 w-full transition-all duration-300",
         isScrolled
-          ? "bg-white/95 backdrop-blur-sm shadow-sm"
+          ? "bg-white/95 backdrop-blur-sm shadow-md"
           : "bg-white"
       )}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           <Link href="/">
-            <a className="text-xl font-bold text-primary flex items-center">
-              Tarek Eltony
-            </a>
+            <div className="font-bold flex items-center">
+              <span className="text-xl md:text-2xl gradient-text">Tarek Eltony</span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex space-x-10">
             {navItems.map((item) => (
               <Link key={item.path} href={item.path}>
-                <a
-                  className={cn(
-                    "text-sm font-medium transition-colors hover:text-primary",
-                    location === item.path
-                      ? "text-primary"
-                      : "text-foreground/70"
+                <div className="group relative py-2">
+                  <div
+                    className={cn(
+                      "text-base font-medium",
+                      location === item.path ? "nav-link-active" : "nav-link"
+                    )}
+                  >
+                    {item.name}
+                  </div>
+                  {location !== item.path && (
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full rounded-full"></span>
                   )}
-                >
-                  {item.name}
-                  {location === item.path && (
-                    <motion.div
-                      className="h-[2px] bg-primary mt-0.5"
-                      layoutId="navbar-indicator"
-                      transition={{ type: "spring", duration: 0.5 }}
-                    />
-                  )}
-                </a>
+                </div>
               </Link>
             ))}
           </nav>
+
+          {/* Contact Button - Desktop Only */}
+          <div className="hidden md:block">
+            <Link href="/contact">
+              <Button className="rounded-full px-6 gradient-bg-primary">
+                Get in Touch
+              </Button>
+            </Link>
+          </div>
 
           {/* Mobile Menu Button */}
           <Button
@@ -110,22 +115,29 @@ const Navbar = () => {
             }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
           >
-            <div className="px-2 pt-2 pb-4 space-y-1">
+            <div className="px-2 pt-4 pb-6 space-y-3">
               {navItems.map((item) => (
                 <Link key={item.path} href={item.path}>
-                  <a
+                  <div
                     className={cn(
-                      "block px-3 py-2 rounded-md text-base font-medium",
+                      "block px-4 py-3 rounded-lg text-base font-medium",
                       location === item.path
-                        ? "bg-primary/10 text-primary"
-                        : "text-foreground/70 hover:bg-muted hover:text-primary"
+                        ? "gradient-bg-primary text-white"
+                        : "text-foreground/80 hover:bg-primary/5 hover:text-primary"
                     )}
                     onClick={closeMobileMenu}
                   >
                     {item.name}
-                  </a>
+                  </div>
                 </Link>
               ))}
+              <div className="pt-2">
+                <Link href="/contact">
+                  <Button className="w-full rounded-lg gradient-bg-primary">
+                    Get in Touch
+                  </Button>
+                </Link>
+              </div>
             </div>
           </motion.div>
         )}
