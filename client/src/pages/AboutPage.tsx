@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import SectionHeader from "@/components/shared/SectionHeader";
+import MediaGallery from "@/components/shared/MediaGallery";
 import { profile } from "@/data/profile";
 
 const AboutPage = () => {
@@ -20,7 +21,7 @@ const AboutPage = () => {
           highlightText="My Story"
         />
 
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-5xl mx-auto mb-16">
           <Card className="border-none shadow-lg rounded-2xl overflow-hidden">
             <div className="h-1.5 gradient-bg-primary w-full"></div>
             <CardContent className="p-8 md:p-12">
@@ -120,6 +121,25 @@ const AboutPage = () => {
               </motion.div>
             </CardContent>
           </Card>
+        </div>
+
+        {/* Media Appearances Section */}
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <div className="text-center mb-12">
+              <h3 className="text-3xl font-bold gradient-text mb-4">Media Appearances</h3>
+              <p className="text-foreground/70 max-w-3xl mx-auto">
+                Watch my TV interviews discussing HR transformation, future of work, and organizational development strategies
+              </p>
+            </div>
+
+            <MediaGallery />
+          </motion.div>
         </div>
       </div>
     </motion.div>
